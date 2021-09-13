@@ -5,7 +5,7 @@ import _thread
 from yolov3 import YOLOv3
 #haar_file = 'haarcascade_frontalface_default.xml'
 datasets = 'datasets'  #All the faces data will be present this folder
-sub_data = 'Pooh'     #This will creater folders in datasets with the face of people, so change it's name everytime for the new person.
+sub_data = 'name'     #This will creater folders in datasets with the face of people, so change it's name everytime for the new person.
 
 path = os.path.join(datasets, sub_data)    
 if not os.path.isdir(path): 
