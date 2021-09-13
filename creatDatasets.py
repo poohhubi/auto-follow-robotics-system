@@ -3,7 +3,7 @@ import numpy as np
 from queue import Queue
 import _thread
 from yolov3 import YOLOv3
-#haar_file = 'haarcascade_frontalface_default.xml'
+name = str(input('ชื่อ'))
 datasets = 'datasets'  #All the faces data will be present this folder
 sub_data = 'name'     #This will creater folders in datasets with the face of people, so change it's name everytime for the new person.
 
@@ -13,11 +13,10 @@ if not os.path.isdir(path):
 (Width, Height) = (130, 200)    # defining the size of images 
 
 
-#face_cascade = cv2.CascadeClassifier(haar_file)
 webcam = cv2.VideoCapture(0) #'0' is use for my webcam, if you've any other camera attached use '1' like this
 yolo = YOLOv3('coco.names','yolov3-tiny.cfg','yolov3-tiny.weights')
 
-# The program loops until it has 30 images of the face.
+# The program loops until it has 250 images of the face.
 count = 1
 while count <= 250:
     (_, im) = webcam.read()
