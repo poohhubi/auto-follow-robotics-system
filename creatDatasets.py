@@ -14,7 +14,7 @@ if not os.path.isdir(path):
 
 
 #face_cascade = cv2.CascadeClassifier(haar_file)
-webcam = cv2.VideoCapture(1) #'0' is use for my webcam, if you've any other camera attached use '1' like this
+webcam = cv2.VideoCapture(0) #'0' is use for my webcam, if you've any other camera attached use '1' like this
 yolo = YOLOv3('coco.names','yolov3-tiny.cfg','yolov3-tiny.weights')
 
 # The program loops until it has 30 images of the face.
