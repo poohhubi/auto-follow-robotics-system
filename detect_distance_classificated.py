@@ -22,7 +22,7 @@ for (subdirs, dirs, files) in os.walk(datasets):
 yolo = YOLOv3('coco.names','yolov3-tiny.cfg','yolov3-tiny.weights')
 model = cv2.face.LBPHFaceRecognizer_create() 
 model.train(images,labels)
-webcam = cv2.VideoCapture(2)
+webcam = cv2.VideoCapture(0)
 
 if not webcam.isOpened():
     raise Exception("Could not open video device")
