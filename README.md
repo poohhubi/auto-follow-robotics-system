@@ -8,3 +8,7 @@
 1.run โปรแกรม creatDatasets.py แล้วใส่ชื่อคนที่จะติดตาม แล้วโปรแกรมจะเริ่มถ่ายภาพจากกล้องที่setไว้ ให้ทำการถ่ายรูปคนคนนั้นแบบ fullbody โดยจะใช้เวลาประมาณ 1 นาที เพื่อถ่ายรูปบุคคลที่จะเป็นเป้าหมายการติดตาม 250 รูป ลงในโฟลเดอร์ datasets
 
 2.ปิดโปรแกรม creatDatasets.py แล้วมา run โปรแกรม detect_distance_classificated.py แล้วใส่ส่วนสูงคนที่ติดตามในหน่อยมิลลิเมตร จากนั้นโปรแกรมจะเปิดกล้องอีกครั้งแล้วเริ่มการ detect และวัดระยะห่างหระหว่างคนในภาพกับกล้อง
+### Authors
+Mr.Nontapat Niwatkanjana
+Mr.Pongpanot Sawaroj
+Mr.Methasit Tunsiri
