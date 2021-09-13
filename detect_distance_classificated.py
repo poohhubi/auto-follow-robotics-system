@@ -1,7 +1,7 @@
 import cv2, sys, numpy, os
 from yolov3 import YOLOv3
 datasets = 'datasets'
-frame_num = 10
+frame_num = 5
 real_Height = int(input('ความสูงในหน่วยmm'))
 print('Training...')
 (images, labels, names, id) = ([], [], {}, 0)
