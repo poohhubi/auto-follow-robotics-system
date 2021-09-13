@@ -19,7 +19,7 @@ yolo = YOLOv3('coco.names','yolov3-tiny.cfg','yolov3-tiny.weights')
 
 # The program loops until it has 30 images of the face.
 count = 1
-while count <= 150:
+while count <= 250:
     (_, im) = webcam.read()
     faces = yolo.detect(im)
     for d in faces:
